@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="nav-bar">
+            <div class="wrapper">
+                <nav>
+                  <div class="logo">
+                    <a href="#">
+                        <img src="Booth.png" alt="" height="53px">
+                    </a>
+                  </div>
+                  <ul class="nav-items" >
+                      <li>
+                          <a href="Home.html">
+                              <img src="home2.png" alt="" height="20px">
+                          </a>
+                      </li>
+                      <li>
+                        <a href="About Us.html">
+                            <img src="abt.png" alt="" height="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Contacts.html">
+                            <img src="msg.png" atlt="" height="20px">
+                           
+                            </div>
+                        </a>
+                    </li>
+                 </ul>
+                </nav>    
+            </div>
+        </div>
+        <header id="header">
+            <div class="Booth-Vid">
+                <video width="1900px" height="500px" 
+                controls="controls"/> 
+                  
+                <source src="lolo.mp4" 
+                    type="video/mp4"> 
+            </video> 
+        
+        <div class="main">
+            <div class="Location">
+                <h2>
+                    LOCATION:
+                </h2>
+                <P>
+                    Johannesburg, Gauteng
+                </P>
+            </div>
+        </div>
+        
+                <form action="https://formspree.io/f/mknyklav" method="post">
+                <h2>
+                    SUBSCRIBE FOR MORE DETAILS:
+                </h2>
+                <ul class="nav-items">
+                    <li class="input-control">
+                        <label>Name&Surname:</label>
+                        <input name="Name&Surname" id="nameSurname" type="text" required>
+                        <ValidationError 
+                            prefix="Name&Surname" 
+                            field="nameSurname"
+                            errors={state.errors}
+                        />
+                    </li>
+                  <li class="input-control">
+                    <label>Phone no:</label>
+                    <input name="Phone" id="phone" type="text"  required>
+                    <ValidationError 
+                      prefix="Phone" 
+                      field="phone"
+                      errors={state.errors}
+                    />
+                  </li>
+                  <li class="input-control">
+                      <label>Feedback:</label>
+                  <textarea id="feed" type="text"></textarea>
+                  </li>
+                <li class="input-control"> 
+                        <label for="email">Your Email</label>
+                        <input name="Email" id="email" type="text" required> 
+                        <ValidationError 
+                           prefix="Email" 
+                           field="email"
+                           errors={state.errors}
+                        />         
+                </li>
+              <button type="submit">
+                  Submit
+              </button>
+              </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript" src="InputValidation.js"></script> 
+    </header>
+        <footer style="background-color: rgb(20, 122, 206);" >
+            
+            <nav>
+                Name :Lawrence <br>
+                Surname :Makamoke<br>
+                Phone :0622430830<br>
+                eMail :lawrencemakamore1@gmail.com<br>
+                Address :1101 Tshiovhe Street, Chiawelo, 1818.
+            </nav>
+            <ul class="foot-items">
+                <li>
+                    <a href="#">
+                        <img src="insta.png" alt="" height="20px">
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                      <img src="fb.png" alt="" height="20px">
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="twitter.png" alt="" height="20px">
+                  </a>
+              </li>
+           </ul>
+
+    </footer>
+</body>
+</html>
